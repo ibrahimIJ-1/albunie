@@ -10,7 +10,7 @@ import Logos from "@/components/sections/Logos";
 export default function Home() {
   return (
     <main className="relative min-h-screen bg-white">
-      <Header locale="en" />
+      <Header />
 
       <Hero />
       <Logos />
