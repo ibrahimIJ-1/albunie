@@ -1,0 +1,59 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Partners",
+        "testimonials": "Testimonials",
+        "contact": "Contact",
+        "language": "العربية"
+    },
+    "Hero": {
+        "title": "Secure Your Future with Advanced Infrastructure",
+        "subtitle": "Al-Bunia Al-Asasiya (BCA) provides world-class IT solutions, security systems, and digital infrastructure to keep your information safe and your business running.",
+        "cta_primary": "Our Services",
+        "cta_secondary": "Contact Us"
+    },
+    "Services": {
+        "title": "Our Expertise",
+        "construction": "Solution Design",
+        "construction_desc": "Our expert consultants work with you to understand your requirements and design a custom IT solution that fits your specific needs.",
+        "infrastructure": "Implementation & Integration",
+        "infrastructure_desc": "We handle the seamless implementation and integration of your chosen IT technologies.",
+        "consulting": "Maintenance & Support",
+        "consulting_desc": "Our dedicated support team ensures the health and peak performance of your IT infrastructure.",
+        "security": "Managed Services",
+        "security_desc": "Comprehensive monitoring and support for your digital infrastructure, allowing you to focus on your core business."
+    },
+    "Logos": {
+        "title": "Authorized Distributors For"
+    },
+    "Testimonials": {
+        "title": "Client Success Stories"
+    },
+    "Agents": {
+        "title": "Our Agents",
+        "subtitle": "Find our authorized agents across Iraq"
+    },
+    "Contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch for IT & Security Solutions",
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "department": "Department",
+        "message": "Your Question",
+        "submit": "Send Message",
+        "departments": {
+            "sales": "Sales",
+            "support": "Technical Support",
+            "general": "General Inquiry"
+        }
+    },
+    "Footer": {
+        "about": "About BCA",
+        "about_desc": "A certified Iraqi company specializing in General Trading and Information Technology. We are your trusted partner for digital infrastructure and security.",
+        "links": "Quick Links",
+        "address": "Baghdad, Iraq",
+        "rights": "All rights reserved © 2025 Al-Bunia Al-Asasiya"
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "Navigation": {
+        "home": "Home",
+        "services": "Services",
+        "projects": "Projects",
+        "testimonials": "Testimonials",
+        "contact": "Contact",
+        "language": "العربية"
+    },
+    "Hero": {
+        "title": "Building the Foundation of the Future",
+        "subtitle": "Al-Bunie Al-Asassie delivers world-class infrastructure and construction solutions with precision and excellence.",
+        "cta_primary": "Our Projects",
+        "cta_secondary": "Contact Us"
+    },
+    "Services": {
+        "title": "Our Expertise",
+        "construction": "General Construction",
+        "construction_desc": "High-quality residential and commercial construction projects delivered on time.",
+        "infrastructure": "Infrastructure",
+        "infrastructure_desc": "Building robust roads, bridges, and utilities for sustainable urban development.",
+        "consulting": "Consulting",
+        "consulting_desc": "Expert engineering consultancy and project management services.",
+        "security": "Managed Services",
+        "security_desc": "Comprehensive monitoring and support for your digital infrastructure, allowing you to focus on your core business."
+    },
+    "Logos": {
+        "title": "Trusted Partners",
+        "certified_expert": "Certified Expert",
+        "authorized_integration": "Authorized Integration",
+        "stats": {
+            "deployments": "500+ Nodes Deployed",
+            "support": "24/7 Priority Support",
+            "engineering": "Certified Engineering"
+        },
+        "partners": {
+            "networking": "Enterprise Core Networking",
+            "security": "Advanced SecOps Defense",
+            "comms": "Unified Communications",
+            "storage": "Resilient Data Storage",
+            "cloud": "Scalable Cloud Infra",
+            "ai": "Cognitive AI Systems",
+            "vapt": "Advanced VAPT Services"
+        }
+    },
+    "Testimonials": {
+        "title": "What Our Clients Say"
+    },
+    "Agents": {
+        "title": "Our Agents",
+        "subtitle": "Serving you across the provinces"
+    },
+    "Contact": {
+        "title": "Contact Us",
+        "subtitle": "Get in touch for your next project",
+        "name": "Full Name",
+        "email": "Email Address",
+        "subject": "Subject",
+        "department": "Department",
+        "message": "Your Question",
+        "submit": "Send Message",
+        "departments": {
+            "sales": "Sales",
+            "support": "Support",
+            "general": "General Inquiry"
+        }
+    },
+    "Footer": {
+        "about": "About Us",
+        "about_desc": "A certified Iraqi company specializing in General Trading and Information Technology. We are your trusted partner for digital infrastructure and security.",
+        "links": "Quick Links",
+        "address": "Baghdad, Iraq",
+        "rights": "All rights reserved © 2025 Al-Bunie Al-Asassie"
+    }
+}
