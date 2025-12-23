@@ -4,6 +4,7 @@ import "./globals.css"; // Relative path fix
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import SmoothScroll from "@/components/layout/SmoothScroll";
+import { getCookie } from "@/lib/cookies-helper";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -27,11 +28,10 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const locale = "en";
+  const locale = await getCookie("NEXT_LOCALE");
   const messages = await getMessages({ locale });
-
   return (
-    <html lang={locale} dir="ltr">
+    <html lang={locale} dir={messages.dir}>
       <body
         className={`${outfit.variable} ${tajawal.variable} antialiased bg-slate-50 text-slate-900 overflow-x-hidden font-sans`}
       >

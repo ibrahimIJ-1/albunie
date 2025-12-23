@@ -1,6 +1,6 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, Locale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
@@ -8,9 +8,11 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll } from "framer-motion";
 import { FiMenu, FiX, FiGlobe } from "react-icons/fi";
 import clsx from "clsx";
+import { getCookie, setCookie } from "@/lib/cookies-helper";
 
-export default function Header({ locale }: { locale: string }) {
+export default function Header() {
   const t = useTranslations("Navigation");
+  const [locale, setLocale] = useState<string | undefined>(undefined);
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const router = useRouter();
@@ -18,6 +20,7 @@ export default function Header({ locale }: { locale: string }) {
   const { scrollYProgress } = useScroll();
 
   useEffect(() => {
+    setLocaleFromCookies();
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
@@ -25,10 +28,14 @@ export default function Header({ locale }: { locale: string }) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const switchLocale = (newLocale: string) => {
-    alert(
-      `Language switching to ${newLocale} - Implement via state/cookie in production`
-    );
+  const switchLocale = async (newLocale: string) => {
+    await setCookie("NEXT_LOCALE", newLocale);
+    window.location.reload();
+  };
+
+  const setLocaleFromCookies = async () => {
+    const locale = await getCookie("NEXT_LOCALE");
+    setLocale(locale);
   };
 
   const navLinks = [

@@ -162,7 +162,7 @@ export default function Logos() {
             whileInView={{ opacity: 1, scale: 1 }}
             className="mb-8"
           >
-            <span className="px-6 py-3 bg-white border border-slate-200 rounded-full text-[12px] font-black uppercase tracking-[0.6em] text-primary shadow-2xl">
+            <span className="px-2 md:px-6 py-3 bg-white border border-slate-200 rounded-full text-[12px] font-black uppercase tracking-[0.6em] text-primary shadow-2xl">
               Architecture & Mastery
             </span>
           </motion.div>
@@ -192,7 +192,7 @@ export default function Logos() {
         >
           {/* Global Glare Effect Overlay */}
           <motion.div
-            className="absolute z-20 pointer-events-none w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] opacity-0 md:opacity-100"
+            className="absolute z-20 pointer-events-none w-[800px] h-[800px] bg-primary/5 rounded-full blur-[150px] opacity-100"
             style={{
               x: smoothGlareX,
               y: smoothGlareY,
@@ -201,7 +201,7 @@ export default function Logos() {
             }}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-6 md:gap-8 items-stretch justify-items-center">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-7 gap-y-6 md:gap-8 items-stretch justify-items-center">
             {partners.map((partner, i) => (
               <GlassDossier
                 key={i}
@@ -306,7 +306,7 @@ function GlassDossier({
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
-      className="relative w-full max-w-[280px]"
+      className="relative w-full md:max-w-[280px]"
     >
       <motion.div
         ref={dossierRef}
@@ -345,7 +345,7 @@ function GlassDossier({
               alt={partner.role}
               width={160}
               height={100}
-              className="w-full h-auto max-h-[120px] object-contain filter grayscale opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 cubic-bezier(0.16, 1, 0.3, 1)"
+              className="w-full h-auto max-h-[120px] object-contain filter md:grayscale md:opacity-40 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000 cubic-bezier(0.16, 1, 0.3, 1)"
             />
           </div>
 
